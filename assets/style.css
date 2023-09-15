@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 25px;
 }
 
 :root {
@@ -17,13 +18,14 @@
 .header {
   background-image: url('./patterns.png');
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   color: var(--text);
   background-color: var(--dark);
   margin: 0;
   padding: 25px;
-  font-size: 25px;
+
 }
 
 
@@ -58,28 +60,57 @@ li a:hover {
   background-color: #04aa6d;
 }
 
+/* p {
+  font-size: 20px;
+} */
 
-.section {
+.about-me,
+.work,
+.contact-me,
+.resume {
   display: flex;
   float: left;
-  color: var(--bodytext);
-  margin: 10px;
   padding: 10px;
+  margin: 25px;
+}
+
+#pic {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 15px;
 }
 
 .side {
-  display: flex;
   border-right: 5px solid var(--midlight);
-  padding: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+#about-me {
+  display: flex;
+  padding: 20px;
   margin: 10px;
-  text-align: end;
 }
 
 #contact-me p {
   display: inline;
+  float: left;
+  align-content: center;
   justify-content: space-between;
   padding: 10px;
-  margin-bottom: 0;
+  margin: 15px;
+  color: var(--dark);
+}
+
+#contact-me a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
 }
 
 @media (max-width: 1231px) {
