@@ -28,6 +28,11 @@
 
 }
 
+#img-mount {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 35px;
+}
 
 .navbar li {
   display: inline-block;
@@ -59,10 +64,6 @@ li a:hover {
 .active {
   background-color: #04aa6d;
 }
-
-/* p {
-  font-size: 20px;
-} */
 
 .about-me,
 .work,
@@ -100,10 +101,11 @@ li a:hover {
   padding: 10px;
   margin: 15px;
   color: var(--dark);
+  text-decoration: underline;
 }
 
 #contact-me a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--dark);
 }
 
@@ -113,10 +115,17 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1231px) {
-  .header {
-    font-size: 1.5rem;
+@media screen and (max-width: 1400px) {
+
+  .navbar,
+  .about-me,
+  .work,
+  article,
+  .contact-me {
+    flex-direction: column;
   }
+
+}
 
 
 }
