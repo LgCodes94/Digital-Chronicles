@@ -32,11 +32,6 @@
   font-size: 50px;
 }
 
-#img-mount {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 35px;
-}
 
 .navbar li {
   display: inline-block;
@@ -82,7 +77,8 @@ li a:hover {
 #pic {
   border-radius: 20px;
   margin: 10px;
-  padding: 15px;
+  padding: 0px;
+  box-shadow: 10px 10px 5px var(--light);
 }
 
 .side {
@@ -95,6 +91,14 @@ li a:hover {
   display: flex;
   padding: 20px;
   margin: 10px;
+
+}
+
+.info {
+  margin: 5px;
+  padding: 10px;
+  font-family: var(--fontFamily);
+
 }
 
 #contact-me p {
@@ -114,7 +118,11 @@ li a:hover {
 }
 
 footer {
-  padding: 30px;
+  background-image: url('./patterns.png');
+  color: var(--text);
+  background-color: var(--dark);
+  margin: 0;
+  padding: 10px;
   clear: both;
   text-align: center;
 }
