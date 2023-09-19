@@ -22,7 +22,6 @@
   flex-direction: row;
   justify-content: space-between;
   color: var(--text);
-  background-color: var(--dark);
   margin: 0;
   padding: 25px;
 
@@ -60,9 +59,9 @@ li a:hover {
   text-decoration: underline;
 }
 
-.active {
+/* .active {
   background-color: #04aa6d;
-}
+} */
 
 .about-me,
 .work,
